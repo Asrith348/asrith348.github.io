@@ -32,6 +32,11 @@ body {
     background-color: #080f3a;
 }
 
+.login {
+    align-self: center;
+    text-decoration: none;
+    color: white;
+}
 
 @media (max-width: 380px) and (min-width: 0px) {
     .navbar img {
