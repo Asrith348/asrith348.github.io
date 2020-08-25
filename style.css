@@ -28,10 +28,10 @@ body {
     margin-bottom: 10px;
 }
 
-.header input {
-    margin-left: 200px;
-    margin: 500px;
+.searchbar {
+    background-color: #080f3a;
 }
+
 
 @media (max-width: 380px) and (min-width: 0px) {
     .navbar img {
