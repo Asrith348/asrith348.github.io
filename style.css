@@ -393,13 +393,21 @@ body {
     color: grey;
 }
 
-@media (max-width: 1024px) and (min-width: 0px) {
-    .navbar img {
-        width: 130px;
-        margin-left: 10px;
+@media (min-width: 1024px) {
+    .rightMenu {
+        width: 20%;
+        right: 0%;
     }
 
+    .maincontent {
+        width: 45%;
+        left: 30%;
 
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
 
     .searchbar,
     .home-icon,
@@ -408,33 +416,62 @@ body {
     }
 
     .maincontent {
-        width: 60%;
-        /*height: 160px; */
-        left: 20%;
-        /* background: #fff;
-        margin-top: 190px;
-        padding-top: 16px; */
-        /* padding-left: 100px; */
-        /* padding-bottom: 10px;
-position: fixed;
-border: .01px solid #c5c4c4; */
+        width: 75%;
+        left: 10%;
+
+    }
+
+    .thirdHeader {
+        width: 100%;
+        left: 0%;
     }
 
     .rightMenu {
         display: none;
     }
 
-    /* .thirdHeader {
-    width: 50%;
-    height: 20px;
-    left: 50%;
-    background: white;
-    margin-top: 115px;
-    padding-top: 16px;
-    padding-bottom: 10px;
-    position: fixed;
-    cursor: pointer;
+}
 
-    overflow: hidden;
-} */
+@media (max-width: 767px) {
+    .navbar img {
+        width: 130px;
+        margin-left: 10px;
+    }
+
+    .searchbar,
+    .home-icon,
+    .leftMenu {
+        display: none;
+    }
+
+    .maincontent {
+        width: 75%;
+        left: 10%;
+
+    }
+
+    .thirdHeader {
+        width: 100%;
+        left: 0%;
+
+    }
+
+    .rightMenu {
+        display: none;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 510px) {
+    .maincontent {
+        width: 75%;
+        left: 10%;
+        height: 30%;
+
+    }
+
+    .thirdHeader {
+        width: 100%;
+        left: 0%;
+    }
 }
