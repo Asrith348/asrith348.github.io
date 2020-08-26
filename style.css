@@ -9,6 +9,7 @@
 body {
     font-family: "Source Sans Pro", "Avenir Next LT Pro Regular", sans-serif;
     /* opacity: .7; */
+    overflow: scroll
 }
 
 .header {
@@ -21,6 +22,7 @@ body {
     position: fixed;
     z-index: 1;
     top: 0;
+
 }
 
 .header img {
@@ -44,6 +46,15 @@ body {
 .header__btns {
     width: 15%;
     color: white;
+}
+
+.login_btn {
+
+    cursor: pointer;
+    top: 15px;
+    width: 20%;
+    margin-right: 40px;
+
 }
 
 #sidebar {
@@ -105,6 +116,7 @@ body {
     right: -500px;
     /* opacity: .7; */
 }
+
 
 #sidebar ul label {
     margin-left: 25px;
@@ -240,6 +252,27 @@ body {
     border: .01px solid #c5c4c4;
 }
 
+.contentCards {
+    width: 40%;
+    height: 100vh;
+    left: 440px;
+    margin-top: 190px;
+    position: fixed;
+    /* overflow: scroll; */
+}
+
+.contentCards>.card {
+    width: 100%;
+    height: 160px;
+    background: white;
+    border: 0.01px solid #c5c4c4;
+    margin-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+
+
 .username p {
     padding-left: 10px;
     font-weight: 700;
@@ -247,7 +280,7 @@ body {
     padding-bottom: 5px;
 }
 
-.maincontent .small {
+.contentCards .small {
     font-size: xx-small;
     font-weight: lighter;
     padding-bottom: 5px;
@@ -393,17 +426,25 @@ body {
     color: grey;
 }
 
+@media (min-width: 1025px) {
+    .login-btn {
+        padding: 20px;
+    }
+}
+
 @media (min-width: 1024px) {
     .rightMenu {
         width: 20%;
         right: 0%;
     }
 
-    .maincontent {
+    .contentCards {
         width: 45%;
         left: 30%;
 
     }
+
+
 
 }
 
@@ -415,7 +456,7 @@ body {
         display: none;
     }
 
-    .maincontent {
+    .contentCards {
         width: 75%;
         left: 10%;
 
@@ -444,7 +485,7 @@ body {
         display: none;
     }
 
-    .maincontent {
+    .contentCards {
         width: 75%;
         left: 10%;
 
@@ -463,11 +504,25 @@ body {
 }
 
 @media (min-width: 0px) and (max-width: 510px) {
-    .maincontent {
+    body {
+        overflow: scroll;
+    }
+
+    .contentCards {
         width: 75%;
         left: 10%;
-        height: 30%;
+        height: 50%;
 
+    }
+
+    .contentCards>.card {
+        width: 100%;
+        height: 155px;
+        background: white;
+        border: 0.01px solid #c5c4c4;
+        /* margin-bottom: 25px; */
+        padding-top: 16px;
+        /* padding-bottom: 10px; */
     }
 
     .thirdHeader {
