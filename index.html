@@ -2,27 +2,138 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./title.jpg" type="image/icon type">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./title.jpg" type="image/icon type" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <title>Questions-EngineersHub</title>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
+    <script type="text/javascript">
+        function togglemenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+            // document.getElementById('content').style.backgroundColor = "red"
+        }
+    </script>
 </head>
 
-<body style="height: 640px;">
+<body>
     <div class="header">
-        <a href="#" class="menu">Login</a>
-        <img src="./logo.png" alt="Engineershub">
+        <img src="./logo.png" alt="Engineershub" />
 
-        <div class="searchbar">
-            <form action="">
-                <input type="text">
-            </form>
+        <form action="">
+            <input class="searchbar" type="text" />
+        </form>
+        <a href="#" class="home-icon">
+            <i class="material-icons" style="color:white">home</i>
+        </a>
+        <div class=" header__btns">
+
+            <div class="login_btn">LogIn</div>
+
+            <div id="sidebar" onclick="togglemenu()">
+                <div class="toggle-btn" style="flex:1;display: flex;align-items: center;">
+                    Menu
+                    <div><span></span>
+                        <span></span>
+                        <span></span></div>
+                </div>
+
+                <ul>
+                    <label class="menuheader">Menu</label>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Legal Disclamier</a></li>
+                    <li><a href="#">Terms&Coditions</a></li>
+                    <li><a href="#">Return policy</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+
+            </div>
+            <div class="secondHeader">
+                <a href="#">
+                    <li>
+                        <div><img src="conversation.png" /></div>
+                        <h1>Questions</h1>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div><img src="book.png" /></div>
+                        <h1>Library</h1>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div><img src="university.png" /></div>
+                        <h1>University Updates</h1>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div><img src="brain.png" /></div>
+                        <h1>Informatives</h1>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div><img src="techlines.png" /></div>
+                        <h1>Technology Lines</h1>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div><img src="class.png" /></div>
+                        <h1>Training & Internships</h1>
+                    </li>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="content" style="background-color:whitesmoke;height:100vh">
+
+        <div class="thirdHeader">
+            <p>Post a Question</p>
+        </div>
+
+        <div class="leftMenu">
+            <div class="event">
+                <img class="eventimage" src="event.png" alt="calender">
+                <p>Events</p><br>
+            </div>
+            <p>RealTime 2020 Training</p>
+        </div>
+        <div class="maincontent">
+            <div class="tag">Question</div>
+            <div class="username">
+                <p>Venu Gopal reddy Seelam</p>
+                <p class="small">4 Months Ago</p>
+
+            </div>
+
+            <P class="Question">EXPLAIN THIS KEYWOARD IN JAVASCRIPT?</P>
+            <div id="ans-btn">
+                <button type="button">#Technology</button>
+                <button type="button">#IT</button>
+                <button type="button">#Java</button>
+            </div>
+            <div class="cotentfooter">
+
+                <span class="ans"><a href="#">0 Answer(s) posted</a></span>
+                <span class="writeAnAnswer">Write an answer</span>
+                <span class="postviews"><span class="ViewsIcon"><i class="fa fa-eye"
+                            aria-hidden="true"></i></span>0</span>
+                <i class="fa fa-whatsapp"></i>
+
+            </div>
+
 
         </div>
 
-    </div>
 
+    </div>
 </body>
 
 </html>

@@ -1,46 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
-
 }
 
 body {
-    font-family: 'Source Sans Pro', 'Avenir Next LT Pro Regular', sans-serif;
+    font-family: "Source Sans Pro", "Avenir Next LT Pro Regular", sans-serif;
+    /* opacity: .7; */
 }
 
 .header {
     background-color: #142067;
     width: 100%;
     height: 50px;
-
-
-    box-shadow: 0px 0px 0px 0px rgba(3, 3, 3, 0.55);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     position: fixed;
-    z-index: 10013;
-    transform: translateZ(0);
+    z-index: 1;
     top: 0;
 }
 
 .header img {
     width: 158px;
-    margin-left: 160px;
+    margin-left: 10px;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
 .searchbar {
     background-color: #080f3a;
+    height: 35px;
+    width: 650px;
+    margin: 2px;
+    color: whitesmoke;
+    font-size: 15px;
+    outline: none;
 }
 
-.login {
-    align-self: center;
-    text-decoration: none;
+
+.header__btns {
+    width: 15%;
     color: white;
 }
 
-@media (max-width: 380px) and (min-width: 0px) {
+#sidebar {
+    position: fixed;
+    right: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    /* text-align: center; */
+    margin-top: 30px;
+    transition: 0.300s ease;
+
+}
+
+
+#sidebar ul {
+    list-style-type: none;
+    padding-top: 90px;
+
+}
+
+#sidebar li {
+
+    color: black;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: small;
+    cursor: pointer;
+    padding-top: 5px;
+
+
+}
+
+#sidebar li>a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.toggle-btn {
+    position: fixed;
+    left: 85%;
+    cursor: pointer;
+    top: 15px;
+
+}
+
+.toggle-btn span {
+    display: block;
+    background-color: white;
+    width: 10px;
+    height: 2px;
+    margin: 2px;
+
+}
+
+#sidebar.active {
+    right: -500px;
+    /* opacity: .7; */
+}
+
+#sidebar ul label {
+    margin-left: 25px;
+
+}
+
+.menuheader {
+
+    margin-left: 16px;
+    width: 78%;
+    font-size: 14px;
+    color: #BB1717;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.secondHeader {
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    background: #fff;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    z-index: 10012;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.secondHeader li {
+    list-style: none;
+    display: inline-block;
+    height: 60px;
+    margin: 0px 15px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+.secondHeader h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.secondHeader img {
+    width: 25px;
+    margin-top: 6px;
+}
+
+.secondHeader a {
+    color: #2f2f2f;
+    text-decoration: none;
+}
+
+.thirdHeader {
+    width: 50%;
+    height: 20px;
+    left: 24%;
+    /* z-index: 10092; */
+    background: white;
+    /* margin-top: 8.3%; */
+    margin-top: 115px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    position: fixed;
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+.thirdHeader p {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.leftMenu {
+
+    width: 16%;
+    height: 100vh;
+    left: 130px;
+    background: #fff;
+    margin-top: 115px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    position: fixed;
+    cursor: pointer;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.leftMenu p {
+    color: gray;
+    padding: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+
+
+}
+
+.leftMenu .event:hover {
+    /* position: fixed; */
+    border: 1px solid #c5c4c4;
+    background-color: whitesmoke;
+
+}
+
+.event {
+    display: flex;
+    padding-left: 20px;
+}
+
+.eventimage {
+    font-size: 11px;
+
+    max-width: 10%;
+    height: auto;
+}
+
+.maincontent {
+    width: 40%;
+    height: 160px;
+    left: 440px;
+    background: #fff;
+    margin-top: 190px;
+    padding-top: 16px;
+    /* padding-left: 100px; */
+    padding-bottom: 10px;
+    position: fixed;
+    border: .01px solid #c5c4c4;
+}
+
+.username p {
+    padding-left: 10px;
+    font-weight: 700;
+    top: 0px;
+    padding-bottom: 5px;
+}
+
+.maincontent .small {
+    font-size: xx-small;
+    font-weight: lighter;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f2f0f1;
+}
+
+
+
+.Question {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#ans-btn {
+    margin-left: 20px;
+
+}
+
+#ans-btn button {
+    padding: 5px;
+    background: #e0dee0;
+    cursor: pointer;
+    border: 1px solid #c5c4c4;
+}
+
+#ans-btn button:hover {
+    background: grey;
+}
+
+.tag {
+
+    position: absolute;
+    right: -1px;
+    padding: 4px 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    background: #bb1717;
+    color: #fff;
+    display: block;
+
+
+}
+
+.cotentfooter {
+    padding: 10px 10px;
+    margin-top: 20px;
+    border-top: 1px solid #f2f0f1;
+    font-size: 14px;
+}
+
+.ans {
+    float: right;
+}
+
+.writeAnAnswer {
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.fa {
+    float: right !important;
+    padding-right: 10px;
+    margin-top: 5px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.postviews {
+    font-size: 10px;
+    color: #6f6868;
+
+
+}
+
+.ViewsIcon {
+    font-size: 11px;
+}
+
+.postviews .fa {
+    float: left !important;
+}
+
+
+@media (max-width: 700px) and (min-width: 0px) {
     .navbar img {
         width: 130px;
         margin-left: 10px;
     }
+
+    .searchbar,
+    .home-icon,
+    .leftMenu {
+        display: none;
+    }
+
+    .maincontent {
+        /* width: 40%;
+        height: 160px; */
+        left: 0%;
+        /* background: #fff;
+        margin-top: 190px;
+        padding-top: 16px; */
+        /* padding-left: 100px; */
+        /* padding-bottom: 10px;
+position: fixed;
+border: .01px solid #c5c4c4; */
+    }
+
+    /* .thirdHeader {
+    width: 50%;
+    height: 20px;
+    left: 50%;
+    background: white;
+    margin-top: 115px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    position: fixed;
+    cursor: pointer;
+
+    overflow: hidden;
+} */
 }
