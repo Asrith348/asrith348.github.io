@@ -511,7 +511,7 @@ body {
     .contentCards {
         width: 75%;
         left: 10%;
-        height: 50%;
+        height: 30%;
 
     }
 
@@ -520,9 +520,9 @@ body {
         height: 155px;
         background: white;
         border: 0.01px solid #c5c4c4; */
-        /* margin-bottom: 25px; */
-        /* padding-top: 16px; */
-        /* padding-bottom: 10px; */
+    /* margin-bottom: 25px; */
+    /* padding-top: 16px; */
+    /* padding-bottom: 10px; */
     /* } */
 
     .thirdHeader {
