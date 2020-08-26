@@ -336,11 +336,13 @@ body {
 }
 
 
-@media (max-width: 700px) and (min-width: 0px) {
+@media (max-width: 1024px) and (min-width: 651px) {
     .navbar img {
         width: 130px;
         margin-left: 10px;
     }
+
+
 
     .searchbar,
     .home-icon,
@@ -349,9 +351,9 @@ body {
     }
 
     .maincontent {
-        /* width: 40%;
-        height: 160px; */
-        left: 0%;
+        width: 60%;
+        /*height: 160px; */
+        left: 20%;
         /* background: #fff;
         margin-top: 190px;
         padding-top: 16px; */
