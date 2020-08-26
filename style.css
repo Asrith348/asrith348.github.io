@@ -161,9 +161,9 @@ body {
 }
 
 .thirdHeader {
-    width: 50%;
+    width: 70%;
     height: 20px;
-    left: 24%;
+    left: 20%;
     /* z-index: 10092; */
     background: white;
     /* margin-top: 8.3%; */
@@ -393,7 +393,7 @@ body {
     color: grey;
 }
 
-@media (max-width: 1024px) and (min-width: 651px) {
+@media (max-width: 1024px) and (min-width: 0px) {
     .navbar img {
         width: 130px;
         margin-left: 10px;
@@ -418,6 +418,10 @@ body {
         /* padding-bottom: 10px;
 position: fixed;
 border: .01px solid #c5c4c4; */
+    }
+
+    .rightMenu {
+        display: none;
     }
 
     /* .thirdHeader {
