@@ -426,13 +426,13 @@ body {
     color: grey;
 }
 
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
     .login-btn {
         padding: 20px;
     }
-}
+} */
 
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
     .rightMenu {
         width: 20%;
         right: 0%;
