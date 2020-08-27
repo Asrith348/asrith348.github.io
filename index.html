@@ -13,6 +13,7 @@
 
     <script type="text/javascript">
         function togglemenu() {
+            document.getElementById('sidebar_items').style.display = "block";
             document.getElementById('sidebar').classList.toggle('active');
             // document.getElementById('content').style.backgroundColor = "red"
         }
@@ -25,72 +26,76 @@
 
         <form action="">
             <input class="searchbar" type="text" />
+            <a href="#" class="search-icon" style="color: white;">
+                <i class="material-icons" ">search</i>
+            </a>
         </form>
-        <a href="#" class="home-icon">
-            <i class="material-icons" style="color:white">home</i>
-        </a>
-        <div class=" header__btns">
+        <a href=" #" class="home-icon">
+                    <i class="material-icons" style="color:white">home</i>
+            </a>
+            <div class=" header__btns">
 
-            <div class="login_btn">LogIn</div>
+                <div class="login_btn">LogIn</div>
 
-            <div id="sidebar" onclick="togglemenu()">
-                <div class="toggle-btn" style="flex:1;display: flex;align-items: center;">
-                    <a class="menubtn">Menu</a>
-                    <div><span></span>
-                        <span></span>
-                        <span></span></div>
+                <div id="sidebar" onclick="togglemenu()">
+                    <div class="toggle-btn" style="flex:1;display: flex;align-items: center;">
+                        <a class="menubtn">
+                            <label>Menu</label></a>
+                        <div><span></span>
+                            <span></span>
+                            <span></span></div>
+                    </div>
+                    <div id="sidebar_items">
+                        <ul>
+                            <label class="menuheader">Menu</label>
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Legal Disclamier</a></li>
+                            <li><a href="#">Terms&Coditions</a></li>
+                            <li><a href="#">Return policy</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <ul>
-                    <label class="menuheader">Menu</label>
-                    <li><a href="#">Home</a> </li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Legal Disclamier</a></li>
-                    <li><a href="#">Terms&Coditions</a></li>
-                    <li><a href="#">Return policy</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-
+                <div class="secondHeader">
+                    <a href="#">
+                        <li>
+                            <div><img src="conversation.png" /></div>
+                            <h1>Questions</h1>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div><img src="book.png" /></div>
+                            <h1>Library</h1>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div><img src="university.png" /></div>
+                            <h1>University Updates</h1>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div><img src="brain.png" /></div>
+                            <h1>Informatives</h1>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div><img src="techlines.png" /></div>
+                            <h1>Technology Lines</h1>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div><img src="class.png" /></div>
+                            <h1>Training & Internships</h1>
+                        </li>
+                    </a>
+                </div>
             </div>
-            <div class="secondHeader">
-                <a href="#">
-                    <li>
-                        <div><img src="conversation.png" /></div>
-                        <h1>Questions</h1>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <div><img src="book.png" /></div>
-                        <h1>Library</h1>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <div><img src="university.png" /></div>
-                        <h1>University Updates</h1>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <div><img src="brain.png" /></div>
-                        <h1>Informatives</h1>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <div><img src="techlines.png" /></div>
-                        <h1>Technology Lines</h1>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <div><img src="class.png" /></div>
-                        <h1>Training & Internships</h1>
-                    </li>
-                </a>
-            </div>
-        </div>
     </div>
     <div id="content" style="background-color:whitesmoke;height:100vh">
 
@@ -153,7 +158,9 @@
                 </div>
             </div>
         </div>
+        <div class="picline">
 
+        </div>
         <div class="rightMenu">
             <div class="rightsidelinks">
 
@@ -177,6 +184,38 @@
         </div>
 
     </div>
+
+    <div class="mobileFooter">
+        <div class="footermenu">
+            <a href="#" class="menu-icon">
+                <i class=" material-icons">menu</i>
+            </a><br><label for="">Browse</label>
+        </div>
+        <div class="footerhome">
+            <a href="#" class="homes-icon" style="color: black;">
+                <i class="material-icons" style="font-size:x-large;">home</i>
+            </a><br><label for="">home</label>
+        </div>
+        <div class="footersearch">
+            <a href="#" class="searchs-icon" style="color:black;">
+                <i class="material-icons ">search</i>
+            </a><br><label for="">Search</label>
+        </div>
+    </div>
+
+    <!-- <div class=" header__btns">
+
+                    <div class="login_btn">LogIn</div>
+
+                    <div id="sidebar" onclick="togglemenu()">
+                        <div class="toggle-btn" style="flex:1;display: flex;align-items: center;">
+                            <a class="menubtn">
+                                <label>Menu</label></a>
+                            <div><span></span>
+                                <span></span>
+                                <span></span></div>
+                        </div>
+                    </div> -->
 </body>
 
 </html>
