@@ -317,6 +317,7 @@ body {
     padding-bottom: 10px;
     position: fixed;
     border: .01px solid #c5c4c4;
+    overflow-y: scroll;
 }
 
 .contentCards {
