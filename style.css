@@ -35,7 +35,7 @@ body {
 .searchbar {
     background-color: #080f3a;
     height: 35px;
-    width: 650px;
+    width: 500px;
     margin: 2px;
     color: whitesmoke;
     font-size: 15px;
@@ -426,13 +426,13 @@ body {
     color: grey;
 }
 
-/* @media (min-width: 1025px) {
-    .login-btn {
-        padding: 20px;
+@media (max-width: 1250px) {
+    .home-icon {
+        display: none;
     }
-} */
+}
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
     .rightMenu {
         width: 20%;
         right: 0%;
@@ -444,7 +444,14 @@ body {
 
     }
 
+    .thirdHeader {
+        width: 70%;
+        left: 15%;
+    }
 
+    /* .home-icon {
+    display: none;
+} */
 
 }
 
