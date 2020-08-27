@@ -37,7 +37,7 @@ body {
 .feedsProfilePicHolder img {
     width: 50px;
     height: 50px;
-    top: 2%;
+    top: 0.7%;
     z-index: 1;
     border-radius: 6px;
     position: absolute;
@@ -294,7 +294,7 @@ body {
     width: 0.5%;
     height: 100vh;
     left: 27%;
-    top: 18%;
+    top: 15%;
     position: relative;
     background: grey;
     margin-top: 115px;
@@ -528,13 +528,13 @@ border-top: 1px solid #e2e2e2;  */
 
 .footersearch {
     width: 20%;
-    padding-top: 5px;
+    padding-top: 2px;
 
 }
 
 .searchsicon {
     margin-left: 900%;
-
+    margin-bottom: 2px;
 
 }
 
@@ -595,14 +595,16 @@ border-top: 1px solid #e2e2e2;  */
     }
 
     .search-icon {
-        right: 38%;
+        right: 42%;
     }
 
-    /* .contentCard {
-    display: none;
-} */
+    .contentCard {
+        display: none;
+    }
 
 }
+
+
 
 @media (min-width: 1024px) and (max-width: 1279px) {
     .rightMenu {
@@ -634,23 +636,33 @@ border-top: 1px solid #e2e2e2;  */
         width: 15%;
     }
 
-    .search-icon {
-        position: fixed;
+    /* .search-icon {
+    position: fixed;
 
-        left: 65%
+    left: 65%
+} */
+    .searchbar {
+        width: 550px;
     }
 
     .search-icon {
-        right: 18%
+        right: 31.5%
     }
 
     .home-icon {
         display: none;
     }
 
-    /* .contentCard {
-    display: none;
-} */
+    .contentCard {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .searchbar {
+        width: 470px;
+    }
 
 }
 
@@ -686,7 +698,7 @@ border-top: 1px solid #e2e2e2;  */
         width: 0.5%;
         height: 100vh;
         left: 6%;
-        top: 18%;
+        top: 16%;
         position: relative;
         background: grey;
         margin-top: 115px;
@@ -713,10 +725,23 @@ border-top: 1px solid #e2e2e2;  */
         border-top: 1px solid #e2e2e2;
     }
 
-    /* .contentCard {
-    display: none;
-} */
+    .contentCard {
+        display: none;
+    }
 
+    .feedsProfilePicHolder img {
+        width: 50px;
+        height: 50px;
+
+        z-index: 1;
+        border-radius: 6px;
+        position: absolute;
+        margin-left: -68px;
+        margin-top: 15px;
+        object-fit: cover;
+        background: #fff;
+        border: 1px solid #cdcdcd;
+    }
 
 }
 
@@ -733,12 +758,13 @@ border-top: 1px solid #e2e2e2;  */
         display: none;
     }
 
-    .contentCards {
-        width: 75%;
-        left: 10%;
+    /* .contentCards {
+    width: 75%;
+    left: 10%;
 
-    }
+}
 
+*/
     .thirdHeader {
         width: 100%;
         left: 0%;
@@ -769,8 +795,43 @@ border-top: 1px solid #e2e2e2;  */
     }
 
     .contentCard {
-        display: none;
+        width: 90%;
+        height: 40%;
+        left: 13%;
+        top: 28%;
+        /* margin-top: 150px; */
+        position: fixed;
+        margin-bottom: 80px;
+        /* overflow: scroll; */
     }
+
+    .contentCard>.card {
+        width: 80%;
+        height: 85%;
+        background: white;
+        border: 1px solid #c5c4c4;
+        margin-bottom: 15px;
+        /* padding-top: 28%; */
+
+    }
+
+    .tag {
+
+        position: absolute;
+        right: 20%;
+        padding: 4px 10px;
+        margin-bottom: 60px;
+        text-align: justify;
+        background: #bb1717;
+        color: #fff;
+        display: block;
+
+
+    }
+
+    /* .contentCard {
+        display: none;
+    } */
 }
 
 @media (max-width:766px) and (min-width:0px) {
@@ -779,9 +840,44 @@ border-top: 1px solid #e2e2e2;  */
         display: none;
     }
 
-    /* .contentCards {
-    display: none;
-} */
+
+    .contentCards {
+        display: none;
+    }
+
+    .contentCard {
+        width: 90%;
+        height: 40%;
+        left: 13%;
+        top: 28%;
+        /* margin-top: 150px; */
+        position: fixed;
+        /* overflow: scroll; */
+    }
+
+    .contentCard>.card {
+        width: 80%;
+        height: 85%;
+        background: white;
+        border: 1px solid #c5c4c4;
+        /* margin-bottom: 5px; */
+        /* padding-top: 28%; */
+        /* padding-bottom: 80px; */
+    }
+
+    .tag {
+
+        position: absolute;
+        right: 20%;
+        padding: 4px 10px;
+        margin-bottom: 60px;
+        text-align: justify;
+        background: #bb1717;
+        color: #fff;
+        display: block;
+
+
+    }
 }
 
 @media (min-width: 0px) and (max-width: 510px) {
@@ -789,7 +885,7 @@ border-top: 1px solid #e2e2e2;  */
         overflow: scroll;
     }
 
-    .contentCards {
+    .contentCard {
         width: 75%;
         left: 10%;
         height: 50%;
@@ -804,18 +900,52 @@ border-top: 1px solid #e2e2e2;  */
         display: none;
     }
 
-    /* .contentCards>.card {
+    .contentCard>.card {
         width: 100%;
         height: 155px;
         background: white;
-        border: 0.01px solid #c5c4c4; */
-    /* margin-bottom: 25px; */
-    /* padding-top: 16px; */
-    /* padding-bottom: 10px; */
-    /* } */
+        border: 0.01px solid #c5c4c4;
+        margin-bottom: 25px;
+        padding-top: 16px;
+        padding-bottom: 10px;
+    }
 
     .thirdHeader {
         width: 100%;
         left: 0%;
+    }
+
+    .contentCard {
+        width: 90%;
+        height: 40%;
+        left: 13%;
+        top: 28%;
+        /* margin-top: 150px; */
+        position: fixed;
+        /* overflow: scroll; */
+    }
+
+    .contentCard>.card {
+        width: 80%;
+        height: 95%;
+        background: white;
+        border: 1px solid #c5c4c4;
+        /* margin-bottom: 5px; */
+        /* padding-top: 28%; */
+        /* padding-bottom: 80px; */
+    }
+
+    .tag {
+
+        position: absolute;
+        right: 20%;
+        padding: 4px 10px;
+        margin-bottom: 60px;
+        text-align: justify;
+        background: #bb1717;
+        color: #fff;
+        display: block;
+
+
     }
 }
