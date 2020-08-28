@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <!-- header block start -->
     <div class="header">
         <img src="./logo.png" alt="Engineershub" />
         <div>
@@ -39,7 +40,7 @@
                     <div class="login_btn">LogIn</div>
 
                     <div id="sidebar" onclick="togglemenu()">
-                        <div class="toggle-btn" style="flex:1;display: flex;align-items: center;">
+                        <div class="toggle-btn" id="toggle-menu" style="flex:1;display: flex;align-items: center;">
                             <a class="menubtn">
                                 <label>Menu</label></a>
                             <div><span></span>
@@ -58,6 +59,8 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- header block close-->
+                    <!-- secondheader start -->
                     <div class="secondHeader">
                         <a href="#">
                             <li>
@@ -98,12 +101,16 @@
                     </div>
                 </div>
         </div>
+        <!-- secondheader start -->
+        <!-- main content start -->
         <div id="content" style="background-color:whitesmoke;height:100vh">
-
+            <!-- thirdHeader start -->
             <div class="thirdHeader">
                 <p>Post a Question</p>
             </div>
+            <!-- thirdHeader ends -->
 
+            <!-- leftMenu starts -->
             <div class="leftMenu">
                 <div class="event">
                     <img class="eventimage" src="event.png" alt="calender">
@@ -114,9 +121,11 @@
                     <p>RealTime 2020 Training</p>
                 </div>
             </div>
+            <!-- leftMenu end -->
+            <!-- contentCards start -->
             <div class="contentCards">
                 <div class="card">
-                    <div class="feedsProfilePicHolder">
+                    <div class="userpicture">
                         <img src="book.png">
                     </div>
 
@@ -145,7 +154,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="feedsProfilePicHolders">
+                    <div class="userpictures">
                         <img src="book.png">
                     </div>
 
@@ -231,6 +240,8 @@
                     </div>
                 </div>
             </div>
+            <!-- contentCards start -->
+            <!-- rightMenu start -->
             <div class="rightMenu">
                 <div class="rightsidelinks">
 
@@ -252,6 +263,7 @@
                 </div>
 
             </div>
+            <!-- rightMenu end -->
             <div class="mobileFooter">
                 <div class="footermenu">
                     <a href="#" class="menu-icon">
@@ -270,19 +282,8 @@
                 </div>
             </div>
 
-            <!-- <div class=" header__btns">
-
-                    <div class="login_btn">LogIn</div>
-
-                    <div id="sidebar" onclick="togglemenu()">
-                        <div class="toggle-btn" style="flex:1;display: flex;align-items: center;">
-                            <a class="menubtn">
-                                <label>Menu</label></a>
-                            <div><span></span>
-                                <span></span>
-                                <span></span></div>
-                        </div>
-                    </div> -->
+        </div>
+        <!-- content end -->
 </body>
 
 </html>
