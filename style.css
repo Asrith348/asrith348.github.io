@@ -551,12 +551,7 @@ border-top: 1px solid #e2e2e2;  */
 
 
 } */
-@media (min-width: 1550) {
-    /* 
-    .search-icon {
-        left: 20%
-    } */
-}
+/* media Queries */
 
 @media (min-width: 1260px) {
     /* .home-icon {
@@ -566,7 +561,7 @@ border-top: 1px solid #e2e2e2;  */
     .searchbar {
         background-color: #080f3a;
         height: 35px;
-        /* width: 620px; */
+        width: 610px;
         margin: 2px;
         color: whitesmoke;
         font-size: 15px;
@@ -597,9 +592,9 @@ border-top: 1px solid #e2e2e2;  */
         width: 15%;
     }
 
-    /* .search-icon {
-        right: 42%;
-    } */
+    .search-icon {
+        right: 35.5%;
+    }
 
     .contentCard {
         display: none;
@@ -968,10 +963,10 @@ border-top: 1px solid #e2e2e2;  */
 
 @media (min-width: 1510px) and (max-width: 2666px) {
     .searchbar {
-        width: 480px;
+        width: 580px;
     }
 
     .search-icon {
-        right: 41.5%;
+        right: 40.5%;
     }
 }
