@@ -24,8 +24,6 @@ body {
     position: fixed;
     z-index: 1;
     top: 0;
-
-
 }
 
 .header img {
@@ -66,7 +64,7 @@ body {
 .searchbar {
     background-color: #080f3a;
     height: 35px;
-    width: 650px;
+    width: 550px;
     margin: 2px;
     color: whitesmoke;
     font-size: 15px;
@@ -560,7 +558,7 @@ border-top: 1px solid #e2e2e2;  */
     } */
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1260px) {
     /* .home-icon {
     display: none;
 } */
@@ -568,7 +566,7 @@ border-top: 1px solid #e2e2e2;  */
     .searchbar {
         background-color: #080f3a;
         height: 35px;
-        width: 630px;
+        /* width: 620px; */
         margin: 2px;
         color: whitesmoke;
         font-size: 15px;
@@ -970,7 +968,7 @@ border-top: 1px solid #e2e2e2;  */
 
 @media (min-width: 1510px) and (max-width: 2666px) {
     .searchbar {
-        width: 900px;
+        width: 480px;
     }
 
     .search-icon {
